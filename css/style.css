@@ -59,20 +59,22 @@ body {
   align-items: center; }
 
 .section-title {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #53c1d8;
   padding: 2rem 0; }
 
 .section-text {
-  font-size: 2.5rem; }
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  letter-spacing: 2px; }
 
 .big-text {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700; }
 
 .accented-text {
-  font-size: 5rem;
+  font-size: 3.4rem;
   color: #53c1d8;
   font-weight: 700; }
 
@@ -84,15 +86,17 @@ body {
 .navigation__item {
   color: #fff;
   text-decoration: none;
-  margin-left: 1rem;
-  letter-spacing: .1rem; }
+  letter-spacing: .1rem;
+  font-size: 1.2rem; }
+  .navigation__item:not(:first-child) {
+    margin-left: 1rem; }
 
 .logo {
   display: flex;
   justify-content: space-between;
   align-items: center; }
   .logo-title {
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-transform: uppercase;
     letter-spacing: 12px; }
 
@@ -103,7 +107,7 @@ body {
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #323232; }
 
@@ -125,8 +129,8 @@ body {
   background: url(../images/ball1.png) no-repeat center top;
   min-height: 17rem;
   position: absolute;
-  top: .1rem;
-  right: 5rem;
+  top: -1rem;
+  right: 30%;
   background-size: contain;
   width: 27rem;
   animation: wave 1.3s ease infinite;
@@ -135,44 +139,44 @@ body {
   .balloon__container {
     width: 60%;
     margin: 0 auto;
-    margin-top: 3rem;
+    margin-top: 2rem;
     text-align: center;
-    margin-right: 65px; }
+    margin-right: 54px; }
   .balloon span {
     display: inline-block; }
   .balloon .w_frontend {
     padding: 0 3px;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     animation: wave 1.2s ease infinite;
     animation-direction: alternate;
     animation-delay: -1s; }
   .balloon .w_css {
     padding: 0 4px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     animation: wave 1.3s ease infinite;
     animation-direction: alternate;
     animation-delay: -1.2s; }
   .balloon .w_react {
     padding: 0 4px;
-    font-size: 2.7rem;
+    font-size: 2.6rem;
     animation: wave 1.4s ease infinite;
     animation-direction: alternate;
     animation-delay: -1s; }
   .balloon .w_ES6 {
     padding: 0 4px;
-    font-size: 2.9rem;
+    font-size: 2.3rem;
     animation: wave 1.5s ease infinite;
     animation-direction: alternate;
     animation-delay: -1.4s; }
   .balloon .w_redux {
     padding: 0 4px;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     animation: wave 1.6s ease infinite;
     animation-direction: alternate;
     animation-delay: -2s; }
   .balloon .w_git {
     padding: 0 4px;
-    font-size: 2.8rem;
+    font-size: 2.1rem;
     animation: wave 1.7s ease infinite;
     animation-direction: alternate;
     animation-delay: -2s; }
@@ -184,50 +188,48 @@ body {
     animation-delay: -2s; }
   .balloon .w_ajax {
     padding: 0 4px;
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     animation: wave 1.9s ease infinite;
     animation-direction: alternate;
     animation-delay: -2s; }
   .balloon .w_jquery {
     padding: 0 4px;
-    font-size: 1.8rem;
+    font-size: 2rem;
     animation: wave 2s ease infinite;
     animation-direction: alternate;
     animation-delay: -3s; }
   .balloon .w_gulp {
     padding: 0 4px;
-    font-size: 2.6rem;
+    font-size: 1.2rem;
     animation: wave 2.1s ease infinite;
     animation-direction: alternate;
     animation-delay: -3s; }
   .balloon .w_webpack {
     padding: 0 4px;
-    font-size: 1.8rem;
+    font-size: 2.1rem;
     animation: wave 2.2s ease infinite;
     animation-direction: alternate;
     animation-delay: -3s; }
   .balloon .w_javascript {
     padding: 0 5px;
-    font-size: 2.4rem;
+    font-size: 2rem;
     animation: wave 2.3s ease infinite;
     animation-direction: alternate;
     animation-delay: -3s; }
 
 .profile {
-  padding-top: 4rem; }
+  padding: 3rem 0; }
   .profile-image {
-    width: 40%; }
+    width: 40%;
+    border-radius: 50%; }
   .profile-info {
     width: 50%;
-    line-height: 4rem;
-    margin-top: -3rem; }
+    line-height: 4rem; }
 
 .skills {
   background-color: #323232;
   padding: 2rem 0;
   color: #fff; }
-  .skills-hard, .skills-soft {
-    width: 40%; }
 
 @keyframes wave {
   0% {
