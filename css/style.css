@@ -62,74 +62,57 @@ body {
   margin: 0 auto; }
 
 .title {
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 2px;
   text-transform: uppercase; }
   .title__small {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    padding: 1.5rem 0;
-    letter-spacing: 2px; }
+    padding: 1.5rem 0; }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #53c1d8;
   padding-top: 2rem; }
 
 .section-text {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 2.3rem;
   letter-spacing: 2px; }
 
 .section-item {
-  line-height: 2.3rem;
   list-style-type: circle; }
 
 .section-column {
   width: 50%; }
 
-.big-text {
-  font-size: 3rem;
-  font-weight: 700; }
-
-.accented-text {
-  font-size: 3.4rem;
-  color: #53c1d8;
-  font-weight: 700; }
+.section-list {
+  padding-left: 1.5rem; }
 
 .header {
   background-color: #323232;
   color: #fff;
   padding: 1rem 0; }
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
 
-.navigation__item {
-  color: #fff;
-  text-decoration: none;
-  letter-spacing: .1rem;
-  font-size: 1.2rem; }
-  .navigation__item:not(:first-child) {
-    margin-left: 1rem; }
-
-.logo-title {
-  font-size: 1.7rem;
-  text-transform: uppercase;
-  letter-spacing: 12px; }
-
-.logo-letter {
-  background-color: #53c1d8;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 50px;
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #323232; }
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .logo-title {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: 12px; }
+  .logo-letter {
+    background-color: #53c1d8;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #323232; }
 
 .description {
   margin-left: 1rem; }
@@ -163,7 +146,7 @@ body {
     display: flex;
     justify-content: space-between; }
   .skills-info {
-    margin-top: 3rem; }
+    margin-top: 4rem; }
 
 .socials {
   display: flex;
