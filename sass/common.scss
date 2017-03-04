@@ -1,6 +1,14 @@
 body {
   font-size: 16px;
   font-family: 'Open Sans Condensed', sans-serif;
+  background-color: #e4f4f3;
+}
+
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .main {
@@ -8,10 +16,21 @@ body {
   width: 100%;
   padding: 0 2rem;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
+
+.title {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  &__small {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1.5rem 0;
+    letter-spacing: 2px;
+  }
+}
+
 
 .section {
 
@@ -19,13 +38,22 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     color: #53c1d8;
-    padding: 2rem 0;
+    padding-top: 2rem;
   }
 
   &-text {
     font-size: 1.5rem;
     line-height: 2.3rem;
     letter-spacing: 2px;
+  }
+
+  &-item {
+    line-height: 2.3rem;
+    list-style-type: circle
+  }
+
+  &-column {
+    width: 50%;
   }
  
 }
@@ -45,9 +73,16 @@ body {
   background-color: #323232;
   color: #fff;
   padding: 1rem 0;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .navigation {
+
   &__item {
     color: #fff;
     text-decoration: none;
@@ -62,196 +97,88 @@ body {
 }
 
 .logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   &-title {
     font-size: 1.7rem;
     text-transform: uppercase;
     letter-spacing: 12px;
   }
+
+  &-letter {
+    background-color: #53c1d8;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #323232;
+  }
 }
 
-.pic {
-  background-color: #53c1d8;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 50px;
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #323232;
-}
 
 .description {
   margin-left: 1rem;
 }
 
-.base {
-  background: url('../images/IMG_6949.JPG')  no-repeat center top;
-  min-height: 590px;
-  background-size: cover;
-  position: relative;
-}
-
-.fork-me {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.balloon {
-  background: url(../images/ball1.png) no-repeat center top;
-  min-height: 17rem;
-  position: absolute;
-  top: -1rem;
-  right: 30%;
-  background-size: contain;
-  width: 27rem;
-  animation: wave 1.3s ease infinite;
-  animation-direction: alternate;
-  animation-delay: -1.2s;
-
-  &__container {
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 2rem;
-    text-align: center;
-    margin-right: 54px;
-  }
-
-span {
-  display: inline-block;
-}
-
-  .w {
-    &_frontend {
-      padding: 0 3px;
-      font-size: 2.4rem;
-      animation: wave 1.2s ease infinite;
-      animation-direction: alternate;
-      animation-delay: -1s
-    }
-    
-    &_css {
-      padding: 0 4px;
-      font-size: 1.5rem;
-      animation: wave 1.3s ease infinite;
-      animation-direction: alternate;
-      animation-delay: -1.2s
-    }
-
-    &_react {
-      padding: 0 4px;
-      font-size: 2.6rem;
-      animation: wave 1.4s ease infinite;
-      animation-direction: alternate;
-      animation-delay: -1s
-    }
-
-    &_ES6 {
-      padding: 0 4px;
-      font-size: 2.3rem;
-      animation: wave 1.5s ease infinite;
-      animation-direction: alternate;
-      animation-delay: -1.4s
-    }
-
-    &_redux {
-      padding: 0 4px;
-      font-size: 2.4rem;
-      animation: wave 1.6s ease infinite;
-      animation-direction: alternate;
-      animation-delay: -2s
-    }
-
-    &_git {
-      padding: 0 4px;
-      font-size: 2.1rem;
-      animation: wave 1.7s ease infinite;
-      animation-direction: alternate;
-      animation-delay: -2s
-    }
-
-    &_ajax {
-      padding: 0 4px;
-      font-size: 1.5rem;
-      animation: wave 1.8s ease infinite;
-      animation-direction: alternate;
-      animation-delay: -2s
-    }
-
-    &_ajax {
-      padding: 0 4px;
-      font-size: 1.8rem;
-      animation: wave 1.9s ease infinite;
-      animation-direction: alternate;
-      animation-delay: -2s
-    }
-
-    &_jquery {
-      padding: 0 4px;
-      font-size: 2rem;
-      animation: wave 2s ease infinite;
-      animation-direction: alternate;
-      animation-delay: -3s
-    }
-
-    &_gulp {
-      padding: 0 4px;
-      font-size: 1.2rem;
-      animation: wave 2.1s ease infinite;
-      animation-direction: alternate;
-      animation-delay: -3s
-    }
-
-    &_webpack {
-      padding: 0 4px;
-      font-size: 2.1rem;
-      animation: wave 2.2s ease infinite;
-      animation-direction: alternate;
-      animation-delay: -3s
-    }
-
-    &_javascript {
-      padding: 0 5px;
-      font-size: 2rem;
-      animation: wave 2.3s ease infinite;
-      animation-direction: alternate;
-      animation-delay: -3s
-    }
-  }
-}
-
 .profile {
-   padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem 2rem;
+  font-size: 1.5rem;
+  min-height: 30rem;
 
-  &-image {
-    width: 40%;
-    border-radius: 50%;
+  .fa {
+    color: #323232;
+
+    &:hover {
+      color: #008dec;
+    }
   }
 
-  &-info {
-    width: 50%;
-    line-height: 4rem;
+  &__info {
+    width: 65%;
+    margin-left: 2rem;
+  }
+
+  &__image {
+    width: 30%;
+    padding-left: 2rem;
+    width: 35%;
+  }
+
+  img {
+    width: 100%;
   }
 }
+
 
 .skills {
   background-color: #323232;
   padding: 2rem 0;
   color: #fff;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .main {
+  //   display: block;
+  // }
+
+  &-info {
+    margin-top: 3rem;
+  }
+  
 }
 
-@keyframes wave {
-  0% {
-    transform: translate(0, -4px);    
-    transform: translate(-4px, 0); 
-  }
-  100% {
-    transform: translate(0, 3px);
-    transform: translate(4px, 0); 
-  }
+.socials {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+
 }
+
+    
