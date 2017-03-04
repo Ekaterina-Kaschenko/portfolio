@@ -152,3 +152,17 @@ body {
   display: flex;
   justify-content: space-around;
   margin-top: 1rem; }
+
+@media only screen and (max-width: 767px) {
+  .section-column {
+    width: 100%; }
+  .profile {
+    display: block; }
+    .profile__image, .profile__info {
+      width: 100%;
+      padding: 0;
+      margin: 0; }
+  .skills-container {
+    display: block; }
+  .socials {
+    margin: 1rem 0; } }
