@@ -167,3 +167,9 @@ body {
     display: block; }
   .socials {
     margin: 1rem 0; } }
+
+.edu {
+  padding: 3rem 0; }
+
+strong {
+  font-weight: 700; }
