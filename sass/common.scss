@@ -65,22 +65,6 @@ body {
   }
 }
 
-.socials {
-  text-align: center;
-  font-size: 2rem;
-
-  .fa {
-    color: #515769;
-    padding: 1rem .5rem;
-    transition: .5s ease;
-
-    &:hover {
-      transform: translateY(-3px);
-    
-    }
-  }
-}
-
 .skills {
   padding: 4rem 0;
 }
@@ -89,7 +73,6 @@ body {
   padding: 4rem 0;
   background-color: #fafafa;
 }
-
 
 .grid { 
   width: 100%;
@@ -130,13 +113,51 @@ body {
     height: 100%;
     transition: all .5s cubic-bezier(0.300, 0.100, 0.580, 1.000);
     background-color: rgba(255,255,255, .4);
-
-    .title {
-      box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, .1);
-    }
   }
   
   img {
     width: 100%;
+  }
+}
+
+.footer {
+  padding: 4rem 0;
+  background-color: #fafafa;
+      text-align: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  border-radius: 50%;
+  color: #b3b3b3;
+  background-color: #ebebeb;
+  text-align: center;
+  margin: 1rem;
+
+  &:hover {
+    color: #00ccff;
+  }
+}
+
+.contacts {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem;
+
+  .title {
+    margin-left: 2.3rem;
+  }
+
+  &__info {
+    .fa {
+       margin: .3em 0 .3em 3rem;
+    }
+
+    .text {
+       margin-right: 1.8rem;
+    }
   }
 }
