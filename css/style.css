@@ -47,129 +47,98 @@ table {
 
 body {
   font-size: 16px;
-  font-family: 'Open Sans Condensed', sans-serif;
-  background-color: #e4f4f3; }
-
-.logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  color: #515769;
+  font-family: 'Roboto Condensed', sans-serif; }
 
 .main {
   max-width: 1024px;
-  width: 100%;
-  padding: 0 2rem;
+  padding: 0 1rem;
   margin: 0 auto; }
 
-.title {
-  font-size: 2rem;
-  letter-spacing: 2px;
-  text-transform: uppercase; }
-  .title__small {
-    font-size: 1.5rem;
-    font-weight: 700;
-    padding: 1.5rem 0;
-    line-height: 2rem; }
-
-.section-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #53c1d8;
-  padding-top: 2rem; }
-
-.section-text {
-  font-size: 1.2rem;
-  line-height: 2.3rem;
-  letter-spacing: 2px; }
-
-.section-item {
-  list-style-type: circle; }
-
-.section-column {
-  width: 50%; }
-
-.section-list {
-  padding-left: 1.5rem; }
-
 .header {
-  background-color: #323232;
-  color: #fff;
   padding: 1rem 0; }
 
 .logo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center; }
+  color: #00ccff; }
   .logo-title {
     font-size: 1.7rem;
     text-transform: uppercase;
-    letter-spacing: 12px; }
-  .logo-letter {
-    background-color: #53c1d8;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 50px;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #323232; }
+    letter-spacing: .9rem; }
 
-.description {
-  margin-left: 1rem; }
+.welcome {
+  background-color: #fafafa;
+  padding: 6rem 0; }
 
-.profile {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 4rem 2rem;
+.title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 2rem; }
+  .title__small {
+    font-size: 1.5rem;
+    color: #515769; }
+
+.nick {
+  color: #00ccff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 5rem;
+  letter-spacing: .8rem; }
+
+.text {
+  text-align: center;
   font-size: 1.5rem;
-  min-height: 30rem; }
-  .profile .fa {
-    color: #323232; }
-    .profile .fa:hover {
-      color: #008dec; }
-  .profile__info {
-    width: 65%;
-    margin-left: 2rem; }
-  .profile__image {
-    width: 30%;
-    padding-left: 2rem;
-    width: 35%; }
-  .profile img {
-    width: 100%; }
-
-.skills {
-  background-color: #323232;
-  padding: 2rem 0;
-  color: #fff; }
-  .skills-container {
-    display: flex;
-    justify-content: space-between; }
-  .skills-info {
-    margin-top: 4rem; }
+  letter-spacing: .3rem; }
+  .text__small {
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    line-height: 1.5; }
 
 .socials {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 1rem; }
+  text-align: center;
+  font-size: 2rem; }
+  .socials .fa {
+    color: #515769;
+    padding: 1rem .5rem;
+    transition: .5s ease; }
+    .socials .fa:hover {
+      transform: translateY(-3px); }
 
-@media only screen and (max-width: 767px) {
-  .section-column {
+.skills {
+  padding: 4rem 0; }
+
+.portfolio {
+  padding: 4rem 0;
+  background-color: #fafafa; }
+
+.grid {
+  width: 100%; }
+  .grid__item {
+    position: relative;
+    display: inline-flex;
+    height: 300px;
+    margin: 5px;
+    background-size: cover !important;
+    vertical-align: middle;
+    transition: all 1s ease; }
+    .grid__item:hover .grid__text {
+      display: block; }
+    .grid__item .section__title {
+      padding-top: 0; }
+    .grid__item--1 {
+      width: 31%; }
+    .grid__item--2 {
+      width: 63%; }
+  .grid__text {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 300px;
+    transition: 1s ease;
+    background-color: rgba(255, 255, 255, 0.4); }
+  .grid img {
     width: 100%; }
-  .profile {
-    display: block; }
-    .profile__image, .profile__info {
-      width: 100%;
-      padding: 0;
-      margin: 0; }
-  .skills-container {
-    display: block; }
-  .socials {
-    margin: 1rem 0; } }
-
-.edu {
-  padding: 3rem 0; }
-
-strong {
-  font-weight: 700; }
