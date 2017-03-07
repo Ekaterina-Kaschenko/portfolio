@@ -99,7 +99,7 @@ body {
     }
 
     &--2 { 
-      width: 63%;
+      width: 63.5%;
     }
   }
 
@@ -121,12 +121,28 @@ body {
 }
 
 .footer {
-  padding: 4rem 0;
+  padding: 2rem 0;
   background-color: #fafafa;
-      text-align: center;
+  text-align: center;
+  font-size: 1.5rem;
+
+  .text__small {
+    padding-top: 2rem;
+    font-size: 1rem;
+  }
+
+  .fa {
+    color: #b3b3b3;
+    cursor: pointer;
+
+    &:hover {
+      color: #00ccff;
+    }
+  }
 }
 
 .icon {
+  display: inline-block;
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -136,6 +152,7 @@ body {
   background-color: #ebebeb;
   text-align: center;
   margin: 1rem;
+  letter-spacing: 0;
 
   &:hover {
     color: #00ccff;
@@ -152,7 +169,7 @@ body {
   }
 
   &__info {
-    .fa {
+    .icon {
        margin: .3em 0 .3em 3rem;
     }
 
