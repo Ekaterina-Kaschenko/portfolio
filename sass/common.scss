@@ -11,7 +11,30 @@ body {
 }
 
 .header {
-  padding: 1rem 0;
+  padding: .6rem 0;
+
+  .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.navigation {
+
+  &-item {
+    color: #515769;
+    text-decoration: none;
+    padding: .3rem;
+
+    &:not(:first-child) {
+      margin-left: .8rem;
+    }
+  }
+
+  .active {
+    border-bottom: 2px solid #00ccff;
+  }
 }
 
 .logo {
@@ -121,13 +144,13 @@ body {
 }
 
 .footer {
-  padding: 2rem 0;
+  padding: 2rem 0 1rem;
   background-color: #fafafa;
   text-align: center;
   font-size: 1.5rem;
 
   .text__small {
-    padding-top: 2rem;
+    padding-top: 1rem;
     font-size: 1rem;
   }
 
@@ -170,11 +193,73 @@ body {
 
   &__info {
     .icon {
-       margin: .3em 0 .3em 3rem;
+       margin: .3em 0 .3em 2rem;
     }
 
     .text {
        margin-right: 1.8rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-device-width: 767px) {
+  .header {
+    .main {
+      display: block;
+    }
+  }
+
+  .welcome {
+    padding: 3rem 0;
+  }
+
+  .logo {
+    text-align: center;
+
+    &-title {
+      margin-left: .9rem;
+    }
+  }
+
+  .navigation {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .grid__item--1,
+  .grid__item--2 {
+    width: 100%;
+  }
+  .portfolio {
+    padding: 2rem 0;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .contacts {
+
+    .title {
+      margin-left: 0;
+    }
+
+    &__info {
+      text-align: left;
+
+      .icon {
+        margin: .3rem;
+      }
+    }
+
+    &__text {
+      font-size: .8rem;
     }
   }
 }
