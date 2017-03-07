@@ -210,11 +210,15 @@ body {
     width: 40px;
     height: 40px;
     line-height: 40px; }
-  .contacts .title {
-    margin-left: 0; }
-  .contacts__info {
-    text-align: left; }
-    .contacts__info .icon {
-      margin: .3rem; }
-  .contacts__text {
-    font-size: .8rem; } }
+  .contacts {
+    padding: 1rem 0; }
+    .contacts .title {
+      margin-left: 0; }
+    .contacts__info {
+      text-align: left; }
+      .contacts__info .text {
+        margin-right: 0; }
+      .contacts__info .icon {
+        margin: .3rem; }
+    .contacts__text {
+      font-size: 1rem; } }

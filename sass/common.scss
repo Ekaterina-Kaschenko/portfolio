@@ -245,6 +245,7 @@ body {
   }
 
   .contacts {
+    padding: 1rem 0;
 
     .title {
       margin-left: 0;
@@ -253,13 +254,17 @@ body {
     &__info {
       text-align: left;
 
+      .text {
+        margin-right: 0;
+      }
+
       .icon {
         margin: .3rem;
       }
     }
 
     &__text {
-      font-size: .8rem;
+      font-size: 1rem;
     }
   }
 }
