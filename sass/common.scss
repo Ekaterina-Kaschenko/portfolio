@@ -10,8 +10,16 @@ body {
   margin: 0 auto;
 }
 
+.section {
+  padding: 4rem 0;
+
+  &-grey {
+    background-color: #fafafa;
+  }
+}
+
 .header {
-  padding: .6rem 0;
+  padding: 1rem 0;
 
   .main {
     display: flex;
@@ -35,21 +43,20 @@ body {
   .active {
     border-bottom: 2px solid #00ccff;
   }
+
+  :hover {
+    color: #00ccff;
+  }
 }
 
 .logo {
   color: #00ccff;
 
   &-title {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
-    letter-spacing: .9rem;
+    letter-spacing: .3rem;
   }
-}
-
-.welcome {
-  background-color: #fafafa;
-  padding: 6rem 0;
 }
 
 .title {
@@ -88,13 +95,47 @@ body {
   }
 }
 
-.skills {
-  padding: 4rem 0;
+.profession {
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  letter-spacing: .15rem;
 }
 
-.portfolio {
+.skills {
   padding: 4rem 0;
-  background-color: #fafafa;
+  
+  &__items {
+    display: inline-block;
+    margin-left: 42%;
+    
+    a {
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: auto 20px;
+      padding-left: 30px;
+      font-size: 17px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: #515769;
+    }
+
+    a[href$="JavaScript"] {
+      background-image: url(../images/javascript.svg);
+    }
+
+    a[href$="react"] {
+      background-image: url(../images/react.svg);
+    }
+
+    a[href$="redux"] {
+      background-image: url(../images/redux.png);
+    }
+
+    a[href$="webpack.github.io"] {
+      background-image: url(../images/webpack.png);
+    }
+  }
 }
 
 .grid { 
@@ -144,8 +185,6 @@ body {
 }
 
 .footer {
-  padding: 2rem 0 1rem;
-  background-color: #fafafa;
   text-align: center;
   font-size: 1.5rem;
 
@@ -183,9 +222,6 @@ body {
 }
 
 .contacts {
-  text-align: center;
-  font-size: 2rem;
-  padding: 2rem;
 
   .title {
     margin-left: 2.3rem;

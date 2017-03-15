@@ -13,37 +13,45 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header section section-grey">
       <div class="main">
         <div class="logo">
           <h1 class="logo-title">Kaice</h1>
-          <p>front-end developer</p>
         </div>
         <nav class="navigation">
-          <a href="#" class="navigation-item active">Home</a>
-          <a href="#" class="navigation-item">Portfolio</a>
-          <a href="#" class="navigation-item">Contacts</a>
+          <a href="#welcome" class="navigation-item active">Home</a>
+          <a href="#portfolio" class="navigation-item">Portfolio</a>
+          <a href="#contacts" class="navigation-item">Contacts</a>
         </nav>
       </div>
     </header>
-    <section class="welcome">
+    <section class="section" id="welcome">
       <div class="main">
         <h1 class="nick">Kaice</h1>
         <p class="text">Kateryna Kashchenko</p>
+        <p class="profession">front-end developer</p>
+        <p class="text__small">
+        <ul class="skills__items">
+          <li><a target="_blank" href="https://ru.wikipedia.org/wiki/JavaScript">JavaScript</a></li>
+          <li><a target="_blank" href="https://facebook.github.io/react">React</a></li>
+          <li><a target="_blank" href="https://github.com/reactjs/redux">Redux</a></li>
+          <li><a target="_blank" href="https://webpack.github.io">Webpack</a></li>
+        </ul>
       </div>
     </section>
-    <section class="skills">
+    <!--<section class="skills">
       <div class="main">
         <h2 class="title">
           Skills
         </h2>
-        <p class="text__small">JavaScript, React + Redux, jQuery, RequireJS </p>
-        <p class="text__small">HTML5, CSS3, SASS, Responsive design, Bootstrap, Foundation </p>
-        <p class="text__small">Gulp, Webpack, NPM, Git </p>
-        <p class="text__small"><strong>ADDITIONAL: </strong> OOP, Photoshop</p>
+        <ul>
+          <li><p class="text__small">JavaScript, React + Redux, </p></li>
+          <li><p class="text__small">Responsive design, </p></li>
+          <li><p class="text__small">Webpack, NPM, </p></li>
+        </ul>
       </div>
-    </section>
-    <section class="portfolio">
+    </section>-->
+    <section class="section section-grey" id="portfolio">
       <div class="main">
         <h2 class="title">
             Portfolio
@@ -93,7 +101,7 @@
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section class="section contacts" id="contacts">
       <div class="main">
         <h2 class="title">Contacts</h2>
          <div class="contacts__info">
@@ -112,7 +120,7 @@
          </div>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer section section-grey">
       <span class="icon">
         <a target="_blank" href="https://www.linkedin.com/in/kateryna-kashchenko-2542a6103/">
           <i class="fa fa-linkedin" aria-hidden="true"></i>

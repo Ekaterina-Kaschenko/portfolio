@@ -52,8 +52,13 @@ body {
   padding: 0 1rem;
   margin: 0 auto; }
 
+.section {
+  padding: 4rem 0; }
+  .section-grey {
+    background-color: #fafafa; }
+
 .header {
-  padding: .6rem 0; }
+  padding: 1rem 0; }
   .header .main {
     display: flex;
     justify-content: space-between;
@@ -69,16 +74,15 @@ body {
 .navigation .active {
   border-bottom: 2px solid #00ccff; }
 
+.navigation :hover {
+  color: #00ccff; }
+
 .logo {
   color: #00ccff; }
   .logo-title {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
-    letter-spacing: .9rem; }
-
-.welcome {
-  background-color: #fafafa;
-  padding: 6rem 0; }
+    letter-spacing: .3rem; }
 
 .title {
   font-size: 2rem;
@@ -109,12 +113,34 @@ body {
     letter-spacing: 0;
     line-height: 1.5; }
 
+.profession {
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  letter-spacing: .15rem; }
+
 .skills {
   padding: 4rem 0; }
-
-.portfolio {
-  padding: 4rem 0;
-  background-color: #fafafa; }
+  .skills__items {
+    display: inline-block;
+    margin-left: 42%; }
+    .skills__items a {
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: auto 20px;
+      padding-left: 30px;
+      font-size: 17px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: #515769; }
+    .skills__items a[href$="JavaScript"] {
+      background-image: url(../images/javascript.svg); }
+    .skills__items a[href$="react"] {
+      background-image: url(../images/react.svg); }
+    .skills__items a[href$="redux"] {
+      background-image: url(../images/redux.png); }
+    .skills__items a[href$="webpack.github.io"] {
+      background-image: url(../images/webpack.png); }
 
 .grid {
   width: 100%; }
@@ -148,8 +174,6 @@ body {
     width: 100%; }
 
 .footer {
-  padding: 2rem 0 1rem;
-  background-color: #fafafa;
   text-align: center;
   font-size: 1.5rem; }
   .footer .text__small {
@@ -176,18 +200,17 @@ body {
   .icon:hover {
     color: #00ccff; }
 
-.contacts {
-  text-align: center;
-  font-size: 2rem;
-  padding: 2rem; }
-  .contacts .title {
-    margin-left: 2.3rem; }
-  .contacts__info .icon {
-    margin: .3em 0 .3em 2rem; }
-  .contacts__info .text {
-    margin-right: 1.8rem; }
-  .contacts__text {
-    font-size: 1.3rem; }
+.contacts .title {
+  margin-left: 2.3rem; }
+
+.contacts__info .icon {
+  margin: .3em 0 .3em 2rem; }
+
+.contacts__info .text {
+  margin-right: 1.8rem; }
+
+.contacts__text {
+  font-size: 1.3rem; }
 
 @media only screen and (max-device-width: 767px) {
   .header .main {
